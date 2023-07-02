@@ -1,0 +1,153 @@
+/* Area de registro*/
+
+.fazer-login {
+    font-size: 0.875rem;
+    font-weight: var(--regular);
+    color: var(--blue);
+    margin: 20px 0 20px;
+}
+
+.fazer-login a {
+    color: var(--blue);
+    font-weight: var(--bold);
+}  
+
+.input-box input[type="date"] {
+    position: relative;
+    width: 200px;
+}
+
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+    content: "";
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    background-image: url(/assets/img/Icones/calendar.svg);
+    bottom: 7px;
+    left: 12px;
+}
+
+.validacao {
+    font-size: 0.625rem;
+    font-weight: var(--regular);
+    letter-spacing: 0.02rem;
+    color: var(--white);
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    width: 55px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: var(--verde);
+    padding-top: 2px;
+    text-align: center;  
+    cursor:default
+}
+
+.dica::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url(/assets/img/Icones/dica.svg);
+    top: 9px;
+    left: 55px;
+}
+
+.input-box input[type="date"]{
+    color: var(--light-blue);
+}
+
+.input-box input[type="date"]:valid {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.checkbox {
+    margin: 0 17px 14px 21px;
+    padding-top: 13px;
+    position: relative;
+}
+.checkbox input {
+    display: none;
+}
+.checkbox label {
+    cursor: pointer;
+    font-size: 0.75rem;
+    letter-spacing: 0.02rem;
+    font-weight: var(--regular);
+    color: var(--blue);
+    margin-left: 30px;
+}
+
+.checkbox label a {
+    font-weight: var(--regular);
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.checkbox input + label::before { 
+    position: absolute;
+    content: "";
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-color: var(--white);
+    border-radius: 4px;
+    bottom: -1px;
+    box-shadow: var(--box-shadow);
+}
+
+.checkbox input:hover + label::before {
+    background-color: var(--cinza-claro);
+}
+
+.checkbox input:checked + label::before {
+    background-image: url(/assets/img/Icones/Vector.svg);
+    background-color: var(--blue);
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-registrar {
+    margin: 33px 50px 33px 50px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: var(--medium);
+    height: 53px;
+    border-radius: 4px;
+    min-width: 70%;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .btn-registrar {
+        margin: 22px 30px 22px 30px;
+        font-size: 0.925rem;
+        height: 40px;
+    }
+
+    .validacao {
+        font-size: 0.625rem;
+        bottom: 50px;
+    }
+
+    .dica::after {
+        top: 9px;
+        left: 45px;
+    }
+
+    .checkbox input:checked + label::before {
+        background-size: 12px;
+    } 
+    
+}

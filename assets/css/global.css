@@ -1,0 +1,314 @@
+/*Variáveis Globais*/
+
+:root {
+    --thin: 100;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --white: #fff;
+    --cinza-claro: #eee
+    --dark-blue: #1e49b9;
+    --blue: #3a68df;
+    --blue-fosco: rgba(58, 105, 223, 0.5);
+    --medium-blue: #5e8bff;
+    --light-blue: #9cb3ef;
+    --box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+    --background-color: #fafafa;
+    --verde: #1d9e49;
+    --laranja: #fa8b3a;
+}
+/*Variáveis Globais*/
+
+/*Global Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 0.016rem;
+}
+
+body {
+    border-top: 2px solid var(--blue);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 10%;
+    max-width: 100%;
+}
+
+/*Cabecalho Container*/
+
+.cabecalho {
+    margin-top: 23px;
+    text-align: center;
+    background-color: var(--blue);
+    gap: 6px;
+    color: var(--white);
+    border-radius: 4px 4px 0 0;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+}
+
+.cabecalho span {
+    color: var(--white);
+    font-weight: var(--semibold);
+    font-size: 1.25rem;
+}
+
+.cabecalho p {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    font-weight: var(--light);
+    letter-spacing: 0.02rem;
+}    
+
+/*Cabecalho Container*/
+
+
+/* Input-Box Global*/
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 0 0 4px 4px;
+}
+
+.input-box:nth-child(1) {
+  margin-top: 10px;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 17px 14px 21px;
+    padding-top: 13px;
+}
+
+.input-box label {
+    color: var(--blue);
+    font-weight: var(--semibold);
+    letter-spacing: 0.016rem;
+}
+
+.input-box input {
+    max-width: 100%;
+    letter-spacing: 0.02rem;
+    height: 40px;
+    margin-top: 16px;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    border: none;
+    padding-left: 50px;
+    color: var(--blue);
+    font-weight: var(--medium);
+    font-size: 0.875rem;
+}
+
+.input-box input:focus {
+    outline: 1px solid var(--blue);
+}
+.input-box input:not(:placeholder-shown):not([type="date"]) {
+    border: 1px solid var(--blue);
+}
+
+.input-box input::placeholder {
+    font-size: 0.875rem;
+    font-weight: var(--medium);
+    color: var(--light-blue);
+}
+
+.svg {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    bottom: 11px;
+    left: 12px;
+}
+
+.eye-svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+/* Slides */
+
+.container-slides {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    height: 99vh;
+    background-color: var(background-color);
+    text-align: center;
+}
+
+.container-slides img {
+    width: 316px;
+    height: 269px;
+    margin-top: 149px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.container-slides .btn-proximo {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--blue);
+    font-weight: var(--medium);
+}
+
+.btn-pular {
+    color: var(--blue-fosco);
+}
+
+.text {
+    margin-top: 448px auto;
+    font-size: 1rem ;
+    font-weight: var(--medium);
+    color: var(--blue);
+    padding: 50px;
+}
+
+.text span {
+    font-weight: var(--semibold);
+}
+
+.container-avancar {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot-1 {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #4e78e3;
+}
+
+.dot-2 {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #9db2ce;
+}
+
+.btn-registro  {
+    width: 333px;
+    height: 49px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: var(--medium);
+    cursor: pointer;
+    letter-spacing: 0.032rem;
+    color: var(--white);
+}
+
+.btn-registro a {
+    color: var(--white);
+}
+
+.text a {
+    color: var(--blue);
+    font-weight: var(--bold);
+}
+
+/* Slides */
+
+
+/*Responsivo*/
+
+@media(max-width:600px) {
+    
+    .text {
+        font-size: .825rem;
+    }
+
+    .container-slides .btn-proximo {
+        font-size: .825rem;
+    }
+
+    .btn-pular {
+        font-size: .825rem;
+    }
+
+    .btn-registro {
+        width: 300px;
+        height: 39px;
+        font-size: .825rem;
+    }
+
+    .container {
+        margin: 0 10px;
+        max-height: 80vh;
+    }
+    
+    .fazer-login {
+        font-size: 0.7rem;
+    }
+
+    .cabecalho span {
+        font-size: .9rem;
+    }
+    
+    .cabecalho p {
+        font-size: 0.6rem;
+    }    
+
+    .input-box input {
+        height: 35px;
+        margin-top: 10px;
+        font-size: 0.675rem;
+    }
+
+    .input-box label {
+        font-size: 0.825rem;
+    }
+
+    .input-box input::placeholder {
+        font-size: 0.675rem;
+    }
+
+    .svg {
+        width: 20px;
+        height: 15px;
+        bottom: 11px;
+        left: 12px;
+    }
+    
+    .eye-svg {
+        width: 20px;
+        height: 15px;
+        right: 15px;
+    }
+
+    .checkbox label {
+        font-size: 0.65rem;
+    }
+}
+
+/*Responsivo*/

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Login - PigSave</title>
+    
+    <!--Meu CSS-->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+
+</head>
+<body>
+    <div>
+        <div>
+            <header class="container-header">
+                <p>Bem-vindo, <br> ao seu gestor <br> financeiro.</p>
+                <img src="/assets/img/Icones/logo.svg" alt="">
+            </header>
+        </div>
+        
+        <div class="container">
+
+            <div class="cabecalho">
+                <span>LOGIN</span>
+                <p>Por favor, insira seus dados</p>
+            </div>
+
+            <form class="container-form" name="login-input" id="login-input" action="" method="post">
+
+                <div class="input-box">
+
+                    <img class="svg" src="/assets/img/Icones/icone-email-azul.svg" alt="">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <img class="svg" src="/assets/img/Icones/password-icon-azul.svg" alt="">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
+                    <img class="eye-svg" src="./assets/img/Icones/eye-password-see-view-svgrepo-com 3.svg" alt="">
+
+                </div>
+
+                <div class="checkbox-div">
+                   
+                        <input type="checkbox" name="lembrar" id="lembrar">
+                        <label for="lembrar">Lembrar senha</label>
+                
+                    <div class="btn-esqueceu">
+                        <a target="_blank" href="/resetpassword.html">Esqueceu sua senha?</a>
+                    </div>
+
+                </div>
+                   
+                <div class="container-btn-entrar">
+                    <button class="btn-entrar">Entrar</button>
+                </div>
+
+                <p class="detalhe">Ou entre</p>
+                
+                <div class="icones">
+
+                    <a href=""><img class="google-logo" src="/assets/img/Icones/google-color-svgrepo-com.svg" alt=""></a>
+                    
+                    <a href=""><img class="facebook-logo" src="/assets/img/Icones/facebook-svgrepo-com.svg" alt=""></a>
+                    
+                </div>
+
+                <p class="footer-registro">Não tem conta? <a href="./signup.html">Registre-se</a></p>
+            </form>
+
+        </div>
+
+    </div>
+    
+    <a href="./index.html"><p class="footer">Entre no modo covidado</p></a>
+
+</body>
+</html>

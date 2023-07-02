@@ -1,0 +1,431 @@
+.cor-1 {
+    color: #76d9df;
+}
+
+.cor-2 {
+    color: #db0000;
+}
+
+.cor-3 {
+    color: #afafaf;
+}
+
+.cor-4 {
+    color: #00b3ff;
+}
+
+.cor-5 {
+    color: #f49302;
+}
+
+.atalho-1::before {
+    background-color: #76d9df;
+}
+
+.atalho-2::before {
+    background-color: #db0000;
+}
+.atalho-3::before {
+    background-color: #afafaf;
+}
+.atalho-4::before {
+    background-color: #00b3ff;
+}
+.atalho-5::before {
+    background-color: #f49302;
+}
+/* header */
+
+.bg-color {
+    background-color: #fafafa;
+}
+
+ul {
+    list-style: none;
+}
+
+.img-perfil {
+    display: flex;
+    justify-content: end;
+}
+
+.img-perfil img {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 74px;
+    height: 70px;
+    outline: 3px solid var(--blue);
+}
+
+.nav-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 34px;
+}
+
+.linha-superior {
+    position: relative;
+    color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    z-index: 999;
+}
+
+.linha-superior h2 {
+    letter-spacing: 0.02rem;
+    font-size: 1.25rem;
+    font-weight: var(--regular);
+}
+
+.linha-superior .nome {
+    font-size: 1.125rem;
+    font-weight: var(--bold);
+    margin-right: 30px;
+}
+
+.linha-superior .nome::before {
+    letter-spacing: 0.02rem;
+    font-size: 0.875rem;
+    position: absolute;
+    content: "Óla,";
+    bottom: 30px;
+    font-weight: var(--regular);
+}
+
+.detalhe {
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    background-color: #c1d3ff;
+    border-radius: 1px;
+    bottom: 40px;
+    right: 178px;
+}
+
+.bastao-detalhe {
+    margin-top: 6px;
+    height: 2px;
+    background-color: var(--blue);
+}
+
+/* header */
+
+.notificacao {
+    position: absolute;
+    right: 95px;
+    top: 25px;
+    cursor: pointer;
+}
+
+main h2 {
+    color: var(--blue);
+    letter-spacing: 1px;
+    font-weight: var(--semibold);
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.375rem;
+}
+
+/*Meu saldo*/
+
+.meu-saldo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    align-items: center;
+    padding: 10px;
+}
+
+.meu-saldo-header {
+    color: var(--blue);
+    font-weight: var(--regular);
+    font-size: 1.5rem;
+    display: grid;
+    grid-column: 1/3;
+    text-align: end;
+    margin-right: 70px;
+}
+
+.saldo {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.saldo h3:nth-child(odd) {
+    letter-spacing: 0.02rem;
+    font-size: 0.875rem;
+}
+
+.saldo p:nth-child(even) {
+    position: relative;
+    font-weight: var(--medium);
+    color: rgba(36, 36, 36, 0.7);
+    letter-spacing: 1px;
+    font-size: .875rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.saldo p:nth-child(2)::before {
+    position: absolute;
+    content: url(/assets/img/Icones/sinal+.png);
+    left: -20px;
+    bottom: 3px;
+}
+
+.saldo p:nth-child(4)::before {
+    position: absolute;
+    content: url(/assets/img/Icones/sinal-.svg);
+    left: -20px;
+    bottom: 3px;
+}
+
+.saldo p:nth-child(6)::before {
+    position: absolute;
+    content: url(/assets/img/Icones/sinal=.png);
+    left: -20px;
+    bottom: 3px;
+}
+
+.saldo p span {
+    color: #838486b2;
+}
+
+.saldo h3:nth-child(1) {
+    letter-spacing: 0.02rem;
+    color: var(--verde);
+}
+
+.saldo h3:nth-child(3) {
+    color: var(--laranja)
+}
+
+.saldo h3:nth-child(5) {
+    color: var(--blue)
+}
+
+.grafico {
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.listas-atalho {
+    font-weight: var(--regular);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 6px;
+    font-size: .875rem;
+}
+
+.detalhe-atalho::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.btn-detalhe {
+    padding-bottom: 18px;
+    width: 75px;
+    height: 15px;
+    grid-column: 3/4;
+    justify-self:end;
+    text-align: center;
+    border: none;
+    color: var(--white);
+    background-color: rgba(157, 157, 157, 0.514);
+    font-weight: var(--semibold);
+    font-size: 0.725rem;
+    border-radius: 4px;
+}
+
+.btn-detalhe-mes {
+    grid-column: 3/4;
+    justify-self:end;
+}
+
+.teste {
+    background-color: blue;
+}
+
+/*Meu saldo*/
+
+
+/*Meus cartoes*/
+
+.meus-cartoes {
+    display: flex;
+    gap: 20px;
+    
+    overflow-x: scroll;
+}
+
+.cartao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ff7a00 ;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    width: 310px;
+    height: 165px;
+    font-weight: var(--regular);
+    font-size: 10px;
+    padding: 10px 15px 8px 15px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-logo-1 {
+    
+    width: 46px;
+    height: 16px;
+}
+
+.img-logo-2 {
+    
+    width: 40px;
+    height: 30px;
+}
+
+.cartao-1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+.cartao-1 h3 {
+    font-size: 10px;
+    font-weight: var(--semibold)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.minhas-metas {
+    height: 160px;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+}
+
+/* Footer-menu */
+
+.menu-container {
+    position: fixed;
+    width: 100%; 
+    height: 95px;
+    bottom: 0;
+    padding: 12px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+
+.itens-menu {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.itens-menu li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #9db2ce;
+}
+
+.itens-menu li span{
+    margin-top: 15px;
+}
+
+.btn-adc1 {
+  width: 59px;
+  height: 47px;
+  border: none;
+  background-color: transparent;
+  cursor: none;
+  pointer-events: none;
+}
+
+.btn-adc2 {
+    position: absolute;
+    border: none;
+    bottom: 70px;
+    background-color: transparent;
+}
+
+
+/* Footer-menu */
+
+@media (max-width: 600px) {
+    
+    .saldo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .meu-saldo-header {
+        font-size: 1.1rem;
+        margin-right: 0;
+        text-align: start;
+    }
+    
+    .itens-menu {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px
+    }
+    .itens-menu li span{
+        letter-spacing: 0.02rem;
+        font-size: 12px;
+        width: 86px;
+    }
+    .itens-menu li a img{
+        width: 35px;
+        height: 30px;
+    }
+    
+    .btn-container {
+        position: relative;
+    }
+
+    .btn-adc1 {
+        width: 86px;
+      }
+
+    .btn-adc2 {
+        position: absolute;
+        bottom: 60px;
+        right: 5px;
+    }
+}

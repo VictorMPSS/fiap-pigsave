@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignUp - PigSave</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Meu Css-->
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    
+  </head>
+  <body>
+        <div class="container">
+
+            <p class="fazer-login">Já tem conta? <a href="./login.html">Faça o login</a></p>
+
+            <div class="cabecalho">
+
+                <span>REGISTRO</span>
+                <p>Insira os dados abaixo</p>
+
+            </div>
+            
+            <form class="container-form" name="signup-form" id="signup-form" action="" method="post">
+
+                <div class="input-box">
+
+                    <img class="svg" src="/assets/img/Icones/avatar.svg" alt="">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" name="data" id="data" required>
+                    
+                </div>
+
+                <div class="input-box">
+
+                    <img class="svg" src="/assets/img/Icones/icone-email-azul.svg" alt="">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+                    
+                </div>
+
+                <div class="input-box">
+
+                    <img class="svg" src="/assets/img/Icones/password-icon-azul.svg" alt="">
+                    <span class="dica"></span>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
+
+                    <div>
+                        <img class="eye-svg" src="/assets/img/Icones/eye-password-see-view-svgrepo-com 3.svg" alt="">
+                    </div>
+                    
+                    <div class="validacao"><span>forte</span></div>
+                </div>
+
+                <div class="input-box">
+
+                    <img class="svg" src="/assets/img/Icones/password-icon-azul.svg" alt="">
+                    <label for="senha2">Confirme a senha</label>
+                    <input type="password" name="senha2" id="senha2" placeholder="Confirme sua senha" required>
+
+                    <div>
+                        <img class="eye-svg" src="/assets/img/Icones/eye-password-see-view-svgrepo-com 3.svg" alt="">
+                    </div>
+                    
+                </div>
+
+                <div class="checkbox">
+
+                    <input type="checkbox" name="lembrar" id="lembrar" required>
+                    <label for="lembrar">Li e concordo com os <a href="/termos.html" target="_blank">Termos</a></label>
+
+                </div>
+
+                <div class="btn-container">
+
+                    <button class="btn-registrar">Registrar</button>
+
+                </div>
+
+            </form>
+        </div>
+
+  </body>
+</html>
